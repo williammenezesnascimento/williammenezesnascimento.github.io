@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>William Nascimento | Portfolio</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="William Nascimento — Desenvolvedor Full Stack & Cloud especializado em Python, APIs, microserviços e infraestrutura AWS.">
+    <meta name="author" content="William Nascimento">
+    <meta name="theme-color" content="#0c4a6e">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="William Nascimento | Portfolio">
+    <meta property="og:description" content="Desenvolvedor Full Stack & Cloud — Python, APIs, microserviços e AWS.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230c4a6e'/%3E%3Ctext x='50' y='68' font-size='55' font-family='Arial, sans-serif' font-weight='bold' fill='%2338bdf8' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">
+
+    <!-- Tailwind CSS (local) -->
+    <script src="js/tailwind.js"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -24,7 +36,8 @@
             }
         }
     </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
@@ -32,65 +45,74 @@
     <div class="flex flex-col lg:flex-row min-h-screen">
         
         <!-- SIDEBAR (Fixada em telas grandes com largura de 80 / 320px) -->
-        <aside class="w-full lg:w-80 bg-brand-900 text-slate-100 flex-shrink-0 lg:fixed lg:inset-y-0 lg:left-0 flex flex-col justify-between p-8 shadow-xl z-20">
+        <aside class="w-full lg:w-72 bg-brand-900 text-slate-100 flex-shrink-0 lg:fixed lg:inset-y-0 lg:left-0 flex flex-col justify-between p-6 shadow-xl z-20 lg:overflow-y-auto">
             <div>
                 <!-- Perfil Header -->
-                <div class="text-center lg:text-left mb-10">
-                    <div class="w-24 h-24 bg-brand-700/50 rounded-2xl mx-auto lg:mx-0 mb-5 flex items-center justify-center border border-brand-500/30 shadow-inner">
-                        <i class="fa-solid fa-code text-3xl text-sky-400"></i>
+                <div class="text-center lg:text-left mb-6">
+                    <div class="w-32 h-32 rounded-full mx-auto mb-3 p-1 bg-gradient-to-br from-sky-400 to-brand-600 shadow-lg shadow-brand-950/40">
+                        <img src="img/will.png" alt="Foto de William Nascimento" class="w-full h-full rounded-full object-cover border-2 border-brand-900">
                     </div>
-                    <h1 class="text-2xl font-bold tracking-tight text-white leading-tight">William Nascimento</h1>
-                    <p class="text-sky-400 font-medium text-sm mt-1">Desenvolvedor Full Stack & Cloud</p>
+                    <p class="text-xl font-bold tracking-tight text-white leading-tight">William Nascimento</p>
+                    <p class="text-sky-400 font-medium text-sm mt-0.5">Desenvolvedor Full Stack & Cloud</p>
+                    <span class="inline-flex items-center gap-1.5 mt-2 bg-emerald-500/10 text-emerald-400 text-xs font-semibold px-3 py-1 rounded-full border border-emerald-500/20">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                        Disponível para novas oportunidades
+                    </span>
                 </div>
-                
+
                 <!-- Navegação Principal -->
-                <nav class="space-y-1">
-                    <a href="#perfil" class="flex items-center space-x-3 py-3 px-4 rounded-xl hover:bg-brand-800/60 hover:text-white transition group">
+                <nav class="space-y-0.5" id="nav-menu">
+                    <a href="#perfil" data-nav class="nav-link flex items-center space-x-3 py-2 px-4 rounded-xl hover:bg-brand-800/60 hover:text-white transition group">
                         <i class="fa-regular fa-user text-sky-400 group-hover:scale-110 transition"></i>
                         <span>Perfil Profissional</span>
                     </a>
-                    <a href="#habilidades" class="flex items-center space-x-3 py-3 px-4 rounded-xl hover:bg-brand-800/60 hover:text-white transition group">
+                    <a href="#habilidades" data-nav class="nav-link flex items-center space-x-3 py-2 px-4 rounded-xl hover:bg-brand-800/60 hover:text-white transition group">
                         <i class="fa-solid fa-gears text-sky-400 group-hover:scale-110 transition"></i>
                         <span>Habilidades</span>
                     </a>
-                    <a href="#experiencia" class="flex items-center space-x-3 py-3 px-4 rounded-xl hover:bg-brand-800/60 hover:text-white transition group">
+                    <a href="#experiencia" data-nav class="nav-link flex items-center space-x-3 py-2 px-4 rounded-xl hover:bg-brand-800/60 hover:text-white transition group">
                         <i class="fa-regular fa-folder-open text-sky-400 group-hover:scale-110 transition"></i>
                         <span>Experiência</span>
                     </a>
-                    <a href="#formacao" class="flex items-center space-x-3 py-3 px-4 rounded-xl hover:bg-brand-800/60 hover:text-white transition group">
+                    <a href="#formacao" data-nav class="nav-link flex items-center space-x-3 py-2 px-4 rounded-xl hover:bg-brand-800/60 hover:text-white transition group">
                         <i class="fa-solid fa-graduation-cap text-sky-400 group-hover:scale-110 transition"></i>
                         <span>Formação & Cursos</span>
                     </a>
-                    <a href="#contato" class="flex items-center space-x-3 py-3 px-4 rounded-xl hover:bg-brand-800/60 hover:text-white transition group">
+                    <a href="#contato" data-nav class="nav-link flex items-center space-x-3 py-2 px-4 rounded-xl hover:bg-brand-800/60 hover:text-white transition group">
                         <i class="fa-regular fa-envelope text-sky-400 group-hover:scale-110 transition"></i>
                         <span>Contato</span>
                     </a>
                 </nav>
             </div>
-            
+
             <!-- Links Redes & Info Fim -->
-            <div class="mt-8 pt-6 border-t border-brand-800/80 text-center lg:text-left">
+            <div class="mt-6 pt-4 border-t border-brand-800/80 text-center lg:text-left">
                 <div class="flex justify-center lg:justify-start space-x-4 mb-4">
-                    <a href="https://www.linkedin.com/in/william-menezes-nascimento-7b4856131" target="_blank" class="text-slate-400 hover:text-sky-400 transition text-lg"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://williammenezesnascimento.github.io/" target="_blank" class="text-slate-400 hover:text-sky-400 transition text-lg"><i class="fa-brands fa-github"></i></a>
-                    <a href="mailto:willmenezesnascimento@gmail.com" class="text-slate-400 hover:text-sky-400 transition text-lg"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/william-menezes-nascimento-7b4856131" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de William Nascimento" class="text-slate-400 hover:text-sky-400 transition text-lg"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://williammenezesnascimento.github.io/" target="_blank" rel="noopener noreferrer" aria-label="GitHub de William Nascimento" class="text-slate-400 hover:text-sky-400 transition text-lg"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:willmenezesnascimento@gmail.com" aria-label="Enviar e-mail para William Nascimento" class="text-slate-400 hover:text-sky-400 transition text-lg"><i class="fa-solid fa-envelope"></i></a>
                 </div>
                 <p class="text-xs text-slate-500">&copy; 2026 William Nascimento</p>
             </div>
         </aside>
 
         <!-- CONTEÚDO PRINCIPAL -->
-        <main class="flex-1 w-full lg:pl-80 p-6 sm:p-10 lg:p-16 space-y-24">
-            <div class="max-w-4xl mx-auto">
-                
+        <main class="flex-1 w-full lg:pl-72 p-6 sm:p-8 lg:p-10 space-y-20">
+            <div class="max-w-4xl mx-auto" style="margin-left: 100px;">
+
+                <!-- TÍTULO PRINCIPAL -->
+                <div class="text-center lg:text-left mb-2">
+                    <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-brand-600">William Nascimento</h1>
+                </div>
+
                 <!-- SEÇÃO: PERFIL PROFISSIONAL -->
-                <section id="perfil" class="pt-10 scroll-mt-20">
-                    <div class="flex items-center space-x-3 mb-8">
-                        <div class="h-10 w-2 bg-brand-500 rounded-full"></div>
-                        <h2 class="text-3xl font-extrabold tracking-tight text-slate-900">Perfil Profissional</h2>
+                <section id="perfil" class="scroll-mt-20">
+                    <div class="flex items-center space-x-3 mb-5" style="margin-top: 30px;">
+                        <div class="h-8 w-2 bg-brand-500 rounded-full"></div>
+                        <h2 class="text-2xl font-extrabold tracking-tight text-slate-900">Perfil Profissional</h2>
                     </div>
-                    
-                    <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm leading-relaxed space-y-6">
+
+                    <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm leading-relaxed space-y-4">
                         <p class="text-lg text-slate-700 font-medium leading-normal border-l-4 border-sky-500 pl-4">
                             Desenvolvedor Full Stack com forte atuação em Python, focado na construção de APIs, microserviços e soluções escaláveis em ambientes cloud (AWS).
                         </p>
@@ -102,7 +124,7 @@
                         </p>
                         
                         <!-- Box DevOps / AWS Highlight -->
-                        <div class="bg-brand-50/50 border border-brand-100 p-6 rounded-xl mt-6">
+                        <div class="bg-brand-50/50 border border-brand-100 p-5 rounded-xl mt-4">
                             <h4 class="font-bold text-brand-900 flex items-center mb-2">
                                 <i class="fa-solid fa-cloud text-brand-500 mr-2"></i> DevOps & Cloud
                             </h4>
@@ -114,16 +136,16 @@
                 </section>
 
                 <!-- SEÇÃO: HABILIDADES -->
-                <section id="habilidades" class="pt-10 scroll-mt-20">
-                    <div class="flex items-center space-x-3 mb-8">
-                        <div class="h-10 w-2 bg-brand-500 rounded-full"></div>
-                        <h2 class="text-3xl font-extrabold tracking-tight text-slate-900">Habilidades Técnicas</h2>
+                <section id="habilidades" class="scroll-mt-20">
+                    <div class="flex items-center space-x-3 mb-5" style="margin-top: 30px;">
+                        <div class="h-8 w-2 bg-brand-500 rounded-full"></div>
+                        <h2 class="text-2xl font-extrabold tracking-tight text-slate-900">Habilidades Técnicas</h2>
                     </div>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <!-- Back-end -->
-                        <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
-                            <h3 class="text-lg font-bold text-brand-900 mb-4 flex items-center border-b pb-2">
+                        <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm">
+                            <h3 class="text-lg font-bold text-brand-900 mb-3 flex items-center border-b pb-2">
                                 <i class="fa-solid fa-server text-brand-500 mr-2"></i> Back-end
                             </h3>
                             <div class="flex flex-wrap gap-2">
@@ -138,8 +160,8 @@
                         </div>
 
                         <!-- Cloud & DevOps -->
-                        <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
-                            <h3 class="text-lg font-bold text-brand-900 mb-4 flex items-center border-b pb-2">
+                        <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm">
+                            <h3 class="text-lg font-bold text-brand-900 mb-3 flex items-center border-b pb-2">
                                 <i class="fa-solid fa-terminal text-brand-500 mr-2"></i> Cloud & DevOps
                             </h3>
                             <div class="flex flex-wrap gap-2">
@@ -153,8 +175,8 @@
                         </div>
 
                         <!-- Front-end -->
-                        <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
-                            <h3 class="text-lg font-bold text-brand-900 mb-4 flex items-center border-b pb-2">
+                        <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm">
+                            <h3 class="text-lg font-bold text-brand-900 mb-3 flex items-center border-b pb-2">
                                 <i class="fa-solid fa-laptop-code text-brand-500 mr-2"></i> Front-end & APIs
                             </h3>
                             <div class="flex flex-wrap gap-2">
@@ -168,8 +190,8 @@
                         </div>
 
                         <!-- Data, NLP & IA -->
-                        <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
-                            <h3 class="text-lg font-bold text-brand-900 mb-4 flex items-center border-b pb-2">
+                        <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm">
+                            <h3 class="text-lg font-bold text-brand-900 mb-3 flex items-center border-b pb-2">
                                 <i class="fa-solid fa-brain text-brand-500 mr-2"></i> Inteligência Artificial & Dados
                             </h3>
                             <div class="flex flex-wrap gap-2">
@@ -185,19 +207,19 @@
                 </section>
 
                 <!-- SEÇÃO: EXPERIÊNCIA -->
-                <section id="experiencia" class="pt-10 scroll-mt-20">
-                    <div class="flex items-center space-x-3 mb-8">
-                        <div class="h-10 w-2 bg-brand-500 rounded-full"></div>
-                        <h2 class="text-3xl font-extrabold tracking-tight text-slate-900">Experiência Profissional</h2>
+                <section id="experiencia" class="scroll-mt-20">
+                    <div class="flex items-center space-x-3 mb-5" style="margin-top: 30px;">
+                        <div class="h-8 w-2 bg-brand-500 rounded-full"></div>
+                        <h2 class="text-2xl font-extrabold tracking-tight text-slate-900">Experiência Profissional</h2>
                     </div>
-                    
-                    <div class="space-y-8 relative before:absolute before:inset-y-0 before:left-4 before:w-0.5 before:bg-slate-200">
-                        
+
+                    <div class="space-y-5 relative before:absolute before:inset-y-0 before:left-4 before:w-0.5 before:bg-slate-200">
+
                         <!-- IEPTB-BR -->
                         <div class="relative pl-10 group">
                             <span class="absolute left-2.5 top-1.5 w-3.5 h-3.5 bg-brand-500 rounded-full ring-4 ring-white group-hover:bg-sky-400 transition"></span>
-                            
-                            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-100 shadow-sm">
+
+                            <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-100 shadow-sm">
                                 <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4 gap-2">
                                     <div>
                                         <h3 class="text-xl font-bold text-slate-950">Desenvolvedor Pleno/Sênior</h3>
@@ -222,7 +244,7 @@
                         <div class="relative pl-10 group">
                             <span class="absolute left-2.5 top-1.5 w-3.5 h-3.5 bg-brand-500 rounded-full ring-4 ring-white group-hover:bg-sky-400 transition"></span>
                             
-                            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-100 shadow-sm">
+                            <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-100 shadow-sm">
                                 <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4 gap-2">
                                     <div>
                                         <h3 class="text-xl font-bold text-slate-950">Programador Delphi / IntraWeb</h3>
@@ -246,16 +268,16 @@
                 </section>
 
                 <!-- SEÇÃO: FORMAÇÃO & CURSOS -->
-                <section id="formacao" class="pt-10 scroll-mt-20">
-                    <div class="flex items-center space-x-3 mb-8">
-                        <div class="h-10 w-2 bg-brand-500 rounded-full"></div>
-                        <h2 class="text-3xl font-extrabold tracking-tight text-slate-900">Formação Acadêmica & Cursos</h2>
+                <section id="formacao" class="scroll-mt-20">
+                    <div class="flex items-center space-x-3 mb-5" style="margin-top: 30px;">
+                        <div class="h-8 w-2 bg-brand-500 rounded-full"></div>
+                        <h2 class="text-2xl font-extrabold tracking-tight text-slate-900">Formação Acadêmica & Cursos</h2>
                     </div>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <!-- Acadêmico -->
-                        <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm md:col-span-1">
-                            <h3 class="text-lg font-bold text-brand-900 mb-4 flex items-center border-b pb-2">
+                        <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm md:col-span-1">
+                            <h3 class="text-lg font-bold text-brand-900 mb-3 flex items-center border-b pb-2">
                                 <i class="fa-solid fa-graduation-cap text-brand-500 mr-2"></i> Graduação
                             </h3>
                             <div class="space-y-1">
@@ -265,8 +287,8 @@
                         </div>
 
                         <!-- Cursos Extracurriculares -->
-                        <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm md:col-span-2">
-                            <h3 class="text-lg font-bold text-brand-900 mb-4 flex items-center border-b pb-2">
+                        <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm md:col-span-2">
+                            <h3 class="text-lg font-bold text-brand-900 mb-3 flex items-center border-b pb-2">
                                 <i class="fa-solid fa-circle-check text-brand-500 mr-2"></i> Especializações & Cursos
                             </h3>
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-slate-700">
@@ -292,17 +314,17 @@
                 </section>
 
                 <!-- SEÇÃO: CONTATO -->
-                <section id="contato" class="pt-10 pb-20 scroll-mt-20">
-                    <div class="flex items-center space-x-3 mb-8">
-                        <div class="h-10 w-2 bg-brand-500 rounded-full"></div>
-                        <h2 class="text-3xl font-extrabold tracking-tight text-slate-900">Vamos conversar?</h2>
+                <section id="contato" class="pb-12 scroll-mt-20">
+                    <div class="flex items-center space-x-3 mb-5" style="margin-top: 30px;">
+                        <div class="h-8 w-2 bg-brand-500 rounded-full"></div>
+                        <h2 class="text-2xl font-extrabold tracking-tight text-slate-900">Vamos conversar?</h2>
                     </div>
-                    
-                    <div class="bg-gradient-to-br from-brand-900 to-slate-950 text-white rounded-2xl p-8 sm:p-10 shadow-lg relative overflow-hidden">
+
+                    <div class="bg-gradient-to-br from-brand-900 to-slate-950 text-white rounded-2xl p-6 sm:p-8 shadow-lg relative overflow-hidden">
                         <div class="absolute -right-16 -bottom-16 w-64 h-64 bg-brand-800 rounded-full opacity-20 blur-3xl"></div>
-                        
+
                         <p class="text-sky-300 font-semibold mb-2">Contato Direto</p>
-                        <h3 class="text-xl sm:text-2xl font-bold mb-6 text-white">Entre em contato para novas oportunidades, projetos PJ, CLT ou parcerias</h3>
+                        <h3 class="text-xl sm:text-2xl font-bold mb-5 text-white">Entre em contato para novas oportunidades, projetos PJ, CLT ou parcerias</h3>
                         
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                             <!-- Telefone -->
@@ -345,5 +367,11 @@
         </main>
     </div>
 
+    <!-- Botão Voltar ao Topo -->
+    <button id="back-to-top" aria-label="Voltar ao topo" class="fixed bottom-6 right-6 w-11 h-11 rounded-full bg-brand-500 text-white shadow-lg flex items-center justify-center opacity-0 pointer-events-none translate-y-4 transition-all duration-300 hover:bg-brand-600 z-30">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
