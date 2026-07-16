@@ -1,0 +1,20 @@
+/* Ajustes finos que complementam as classes utilitárias do Tailwind */
+
+::selection {
+    background-color: #0284c7;
+    color: #fff;
+}
+
+/* Barra de rolagem discreta na sidebar (Chrome/Edge/Safari) */
+aside::-webkit-scrollbar {
+    width: 6px;
+}
+
+aside::-webkit-scrollbar-thumb {
+    background-color: rgba(148, 163, 184, 0.35);
+    border-radius: 999px;
+}
+
+aside::-webkit-scrollbar-track {
+    background: transparent;
+}
