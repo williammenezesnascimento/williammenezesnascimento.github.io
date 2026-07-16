@@ -1,574 +1,349 @@
-<!DOCTYPE HTML>
-<html lang="pt-br">
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Will Menezes Nascimento</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="William Menezes Nascimento - Portifólio de apresentação" />
-	<meta name="keywords" content="Desenvolvedor Full Stack, Desenvolvedor, Desenvolvedor Web, Python, Desenvolvedor Python, Desenvolvedor Django, Desenvolvedor Flask, Desenvolvedor API REST FULL, Desenvolvedor API FAST, Desenvolvedor LARAVEL, Desenvolvedor PHP,
-	Desenvolvedor Front End, Desenvolvedor Vue, Desenvolvedor React, Programador Full Stack, Programador, Programador Web, Python, Programador Python, Programador Django, Programador Flask, Programador API REST FULL, Programador API FAST, Programador LARAVEL, Programador PHP,
-	Programador Front End, Programador Vue, Programador React" />
-	<meta name="author" content="William Menezes Nascimento" />
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William Nascimento | Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            500: '#0284c7',
+                            600: '#0369a1',
+                            700: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
-	<link rel="icon" href="favicon.ico" />
+    <!-- Wrapper -->
+    <div class="flex flex-col lg:flex-row min-h-screen">
+        
+        <!-- SIDEBAR (Fixada em telas grandes com largura de 80 / 320px) -->
+        <aside class="w-full lg:w-80 bg-brand-900 text-slate-100 flex-shrink-0 lg:fixed lg:inset-y-0 lg:left-0 flex flex-col justify-between p-8 shadow-xl z-20">
+            <div>
+                <!-- Perfil Header -->
+                <div class="text-center lg:text-left mb-10">
+                    <div class="w-24 h-24 bg-brand-700/50 rounded-2xl mx-auto lg:mx-0 mb-5 flex items-center justify-center border border-brand-500/30 shadow-inner">
+                        <i class="fa-solid fa-code text-3xl text-sky-400"></i>
+                    </div>
+                    <h1 class="text-2xl font-bold tracking-tight text-white leading-tight">William Nascimento</h1>
+                    <p class="text-sky-400 font-medium text-sm mt-1">Desenvolvedor Full Stack & Cloud</p>
+                </div>
+                
+                <!-- Navegação Principal -->
+                <nav class="space-y-1">
+                    <a href="#perfil" class="flex items-center space-x-3 py-3 px-4 rounded-xl hover:bg-brand-800/60 hover:text-white transition group">
+                        <i class="fa-regular fa-user text-sky-400 group-hover:scale-110 transition"></i>
+                        <span>Perfil Profissional</span>
+                    </a>
+                    <a href="#habilidades" class="flex items-center space-x-3 py-3 px-4 rounded-xl hover:bg-brand-800/60 hover:text-white transition group">
+                        <i class="fa-solid fa-gears text-sky-400 group-hover:scale-110 transition"></i>
+                        <span>Habilidades</span>
+                    </a>
+                    <a href="#experiencia" class="flex items-center space-x-3 py-3 px-4 rounded-xl hover:bg-brand-800/60 hover:text-white transition group">
+                        <i class="fa-regular fa-folder-open text-sky-400 group-hover:scale-110 transition"></i>
+                        <span>Experiência</span>
+                    </a>
+                    <a href="#formacao" class="flex items-center space-x-3 py-3 px-4 rounded-xl hover:bg-brand-800/60 hover:text-white transition group">
+                        <i class="fa-solid fa-graduation-cap text-sky-400 group-hover:scale-110 transition"></i>
+                        <span>Formação & Cursos</span>
+                    </a>
+                    <a href="#contato" class="flex items-center space-x-3 py-3 px-4 rounded-xl hover:bg-brand-800/60 hover:text-white transition group">
+                        <i class="fa-regular fa-envelope text-sky-400 group-hover:scale-110 transition"></i>
+                        <span>Contato</span>
+                    </a>
+                </nav>
+            </div>
+            
+            <!-- Links Redes & Info Fim -->
+            <div class="mt-8 pt-6 border-t border-brand-800/80 text-center lg:text-left">
+                <div class="flex justify-center lg:justify-start space-x-4 mb-4">
+                    <a href="https://www.linkedin.com/in/william-menezes-nascimento-7b4856131" target="_blank" class="text-slate-400 hover:text-sky-400 transition text-lg"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://williammenezesnascimento.github.io/" target="_blank" class="text-slate-400 hover:text-sky-400 transition text-lg"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:willmenezesnascimento@gmail.com" class="text-slate-400 hover:text-sky-400 transition text-lg"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <p class="text-xs text-slate-500">&copy; 2026 William Nascimento</p>
+            </div>
+        </aside>
 
-	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="flex-1 w-full lg:pl-80 p-6 sm:p-10 lg:p-16 space-y-24">
+            <div class="max-w-4xl mx-auto">
+                
+                <!-- SEÇÃO: PERFIL PROFISSIONAL -->
+                <section id="perfil" class="pt-10 scroll-mt-20">
+                    <div class="flex items-center space-x-3 mb-8">
+                        <div class="h-10 w-2 bg-brand-500 rounded-full"></div>
+                        <h2 class="text-3xl font-extrabold tracking-tight text-slate-900">Perfil Profissional</h2>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm leading-relaxed space-y-6">
+                        <p class="text-lg text-slate-700 font-medium leading-normal border-l-4 border-sky-500 pl-4">
+                            Desenvolvedor Full Stack com forte atuação em Python, focado na construção de APIs, microserviços e soluções escaláveis em ambientes cloud (AWS).
+                        </p>
+                        <p class="text-slate-600">
+                            Ampla experiência no desenvolvimento de sistemas distribuídos, integrações complexas e pipelines de processamento de dados. Atuo diretamente em aplicações orientadas a dados e Inteligência Artificial, incluindo processamento de linguagem natural (NLP), Machine Learning e criação de chatbots inteligentes.
+                        </p>
+                        <p class="text-slate-600">
+                            Especialista no processamento e validação de arquivos pesados e assinaturas digitais (PDF, ZIP, P7S), com foco incansável em performance, segurança da informação e clean code em ambientes produtivos utilizando bancos de dados consolidados (SQL Server, MySQL, PostgreSQL) e Docker.
+                        </p>
+                        
+                        <!-- Box DevOps / AWS Highlight -->
+                        <div class="bg-brand-50/50 border border-brand-100 p-6 rounded-xl mt-6">
+                            <h4 class="font-bold text-brand-900 flex items-center mb-2">
+                                <i class="fa-solid fa-cloud text-brand-500 mr-2"></i> DevOps & Cloud
+                            </h4>
+                            <p class="text-slate-600 text-sm">
+                                Domínio em infraestrutura AWS, com foco na implementação de esteiras de CI/CD utilizando Jenkins e AWS CodeDeploy para automação de builds e deploys contínuos. Garantia de performance, segurança e escalabilidade através de automação em nuvem.
+                            </p>
+                        </div>
+                    </div>
+                </section>
 
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/icomoon.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/style.css">
-	<script src="js/modernizr-2.6.2.min.js"></script>
+                <!-- SEÇÃO: HABILIDADES -->
+                <section id="habilidades" class="pt-10 scroll-mt-20">
+                    <div class="flex items-center space-x-3 mb-8">
+                        <div class="h-10 w-2 bg-brand-500 rounded-full"></div>
+                        <h2 class="text-3xl font-extrabold tracking-tight text-slate-900">Habilidades Técnicas</h2>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Back-end -->
+                        <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                            <h3 class="text-lg font-bold text-brand-900 mb-4 flex items-center border-b pb-2">
+                                <i class="fa-solid fa-server text-brand-500 mr-2"></i> Back-end
+                            </h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-slate-100 text-slate-800 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">Python</span>
+                                <span class="bg-brand-50 text-brand-700 text-xs font-bold px-3 py-1.5 rounded-lg border border-brand-100">FastAPI</span>
+                                <span class="bg-slate-100 text-slate-800 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">Flask</span>
+                                <span class="bg-slate-100 text-slate-800 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">Django</span>
+                                <span class="bg-slate-100 text-slate-800 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">PHP</span>
+                                <span class="bg-slate-100 text-slate-800 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">Laravel</span>
+                                <span class="bg-slate-100 text-slate-800 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">Lumen</span>
+                            </div>
+                        </div>
 
-	</head>
-	<body>
-	<div id="colorlib-page">
-		<div class="container-wrap">
-		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
-			<div class="text-center">
-				<div class="author-img" style="background-image: url(images/about.jpg);"></div>
-				<h1 id="colorlib-logo"><a href="index.html">William Menezes Nascimento</a></h1>
-				<span class="position"><a href="#">Full Stack Developer</a>
-                <br>Analista de sistema</span>
-			</div>
-			<nav id="colorlib-main-menu" role="navigation" class="navbar">
-				<div id="navbar" class="collapse">
-					<ul>
-						<li class="active"><a href="#" data-nav-section="about">Sobre</a></li>
-						<li><a href="#" data-nav-section="services">Experiências</a></li>
-						<li><a href="#" data-nav-section="skills">Habilidades</a></li>
-						<li><a href="#" data-nav-section="education">Formação</a></li>
-						<li><a href="#" data-nav-section="experience">Trajetória</a></li>
-						<li><a href="#" data-nav-section="contact">Contato</a></li>
-					</ul>
-				</div>
-			</nav>
-		</aside>
+                        <!-- Cloud & DevOps -->
+                        <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                            <h3 class="text-lg font-bold text-brand-900 mb-4 flex items-center border-b pb-2">
+                                <i class="fa-solid fa-terminal text-brand-500 mr-2"></i> Cloud & DevOps
+                            </h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-brand-50 text-brand-700 text-xs font-bold px-3 py-1.5 rounded-lg border border-brand-100">AWS Cloud</span>
+                                <span class="bg-slate-100 text-slate-800 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">AWS Lambda</span>
+                                <span class="bg-slate-100 text-slate-800 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">Docker</span>
+                                <span class="bg-slate-100 text-slate-800 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">Jenkins</span>
+                                <span class="bg-slate-100 text-slate-800 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">CI/CD</span>
+                                <span class="bg-slate-100 text-slate-800 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">Terraform</span>
+                            </div>
+                        </div>
 
-		<div id="colorlib-main">
-			<section class="colorlib-about" data-section="about">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="col-md-12">
-									<div class="about-desc">
-										<h1>Quem sou eu?</h1>
-										<p><strong>Oi eu sou William</strong>, analista de sistema, apaixonado por tecnologia, cultura geek e artes marciais..</p>
-										<p>Sempre antenado nas inovações tecnológicas, buscando sempre melhorar cada vez mais a eficiência dos algoritmos, seguindo um padrão clean code, uma das minhas grandes paixões na área é o <b>Python (DJANGO, FLASK E API FAST)</b> mas me identifico também às outras linguagens como: <b>PHP , Java como Front, Vue e React</b>. </p>
-                                        <p>Sou desenvolvedor <b>Full Stack</b> a mais de 10 anos, hoje estou me aprofundando nos estudos de data Science, sou criativo e gosto de me arriscar, buscando melhorar e evoluir, aprimorando técnicas e aprendendo com o próximo, me considero uma pessoa simpática que trata as pessoas bem, com educação e respeito sem diferenciar ninguém.</p>
-                                        <p><u><b>Faço trabalho voluntário na AMFC - Associação Maria Flos Carmeli, desenvolvendo um sistema para gestão escolar.</b></u></p>
-										<p><u>Estou disponível as contratações por: PJ, CLT e FREELANCER.</u></p>
-                                        <p>Em busca de satisfação e momentos de alegria busco a paz na prática de artes marciais, viajar e curtir uma boa série para completar o final do dia.</p>
-                                        <p><strong>Para saber mais abaixo tem minhas qualificações/experiências detalhadas.</strong></p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			
-			<section class="colorlib-services" data-section="services">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-12 col-md-offset-12 col-md-pull-12 animate-box" data-animate-effect="fadeInLeft">
-							<h1>O que eu faço?</h1>
-							<h2 class="colorlib-heading">Aqui estão algumas das minhas experiências</h2>
-						</div>
-					</div>
-					<div class="row row-pt-md">
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-1">
-								<span class="icon">
-									<i class="icon-bulb"></i>
-								</span>
-								<div class="desc">
-									<h3>Idéias Inovadoras</h3>
-									<p style="text-align: left;">Vamos inovar seu sistema? Performance, qualidade e desempenho. </p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-2">
-								<span class="icon">
-									<i class="icon-data"></i>
-								</span>
-								<div class="desc">
-									<h3>Software</h3>
-									<p style="text-align: left;">Análise de sistema, melhorias em usabilidades do usuário e performance.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-3">
-								<span class="icon">
-									<i class="icon-phone3"></i>
-								</span>
-								<div class="desc">
-									<h3>Aplicativos</h3>
-									<p style="text-align: left;">Desenvolvimento de aplicativos multiplataforma, utilizando React Native.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-4">
-								<span class="icon">
-									<i class="icon-layers2"></i>
-								</span>
-								<div class="desc">
-									<h3>API REST FULL</h3>
-									<p style="text-align: left;">Desenvolvimento de API REST FULL, segurança, desempenho, performance.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-5">
-								<span class="icon">
-									<i class="icon-data"></i>
-								</span>
-								<div class="desc">
-									<h3>BACK END</h3>
-									<p style="text-align: left;">Buscando sempre melhor desempenho, qualidade e segurança no Back.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-6">
-								<span class="icon">
-									<i class="icon-layout"></i>
-								</span>
-								<div class="desc">
-									<h3>FRONT END</h3>
-									<p style="text-align: left;">Usabilidade é tudo, proporcionar melhor usabilidade ao usuário final.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+                        <!-- Front-end -->
+                        <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                            <h3 class="text-lg font-bold text-brand-900 mb-4 flex items-center border-b pb-2">
+                                <i class="fa-solid fa-laptop-code text-brand-500 mr-2"></i> Front-end & APIs
+                            </h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-slate-100 text-slate-800 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">Vue.js</span>
+                                <span class="bg-slate-100 text-slate-800 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">React</span>
+                                <span class="bg-slate-100 text-slate-800 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">JavaScript</span>
+                                <span class="bg-slate-100 text-slate-800 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">REST API</span>
+                                <span class="bg-slate-100 text-slate-800 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">GraphQL</span>
+                                <span class="bg-slate-100 text-slate-800 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">HTML5 / CSS3</span>
+                            </div>
+                        </div>
 
-			<section class="colorlib-skills" data-section="skills">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<h1>Habilidades</h1>
-							<h2 class="colorlib-heading animate-box">Minhas habilidades</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-							<p>Conheça algumas das minhas habilidades.</p>
-						</div>											
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>HTML5</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="100"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:100%">
-								    <span>100%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="progress-wrap">
-								<h3>CSS3</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
-								    <span>90%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="progress-wrap">
-								<h3>Javascript</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="90"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
-								    <span>90%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>Vue</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
-								    <span>90%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>React / React Native</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="90"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
-								    <span>90%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>Python</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="90"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
-								    <span>90%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>	
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>Django</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="95"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:95%">
-								    <span>95%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="progress-wrap">
-								<h3>Flask</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="95"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:95%">
-								    <span>95%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="progress-wrap">
-								<h3>API Fast</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="70"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
-								    <span>70%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="progress-wrap">
-								<h3>PEP 8</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="95"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:95%">
-								    <span>95%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="progress-wrap">
-								<h3>PHP</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="90"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
-								    <span>90%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>																
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>Laravel</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="95"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:95%">
-								    <span>95%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>P O.O</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
-								    <span>90%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>Code clean</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
-								    <span>90%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>Git</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="80"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
-								    <span>80%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>Servidores</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
-								    <span>90%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>						
-					</div>
-				</div>
-			</section>
+                        <!-- Data, NLP & IA -->
+                        <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                            <h3 class="text-lg font-bold text-brand-900 mb-4 flex items-center border-b pb-2">
+                                <i class="fa-solid fa-brain text-brand-500 mr-2"></i> Inteligência Artificial & Dados
+                            </h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-brand-50 text-brand-700 text-xs font-bold px-3 py-1.5 rounded-lg border border-brand-100">NLP</span>
+                                <span class="bg-slate-100 text-slate-800 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">Machine Learning</span>
+                                <span class="bg-slate-100 text-slate-800 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">Chatbots Inteligentes</span>
+                                <span class="bg-slate-100 text-slate-800 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">PostgreSQL</span>
+                                <span class="bg-slate-100 text-slate-800 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">MySQL</span>
+                                <span class="bg-slate-100 text-slate-800 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">SQL Server</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-			<section class="colorlib-education" data-section="education">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-12 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<h1>Formações</h1>
-							<h2 class="colorlib-heading animate-box">Algumas das minhas formações</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-							<div class="fancy-collapse-panel">
-								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingOne">
-									        <h4 class="panel-title">
-									            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Cursando - Big Data FIAP
-									            </a>
-									        </h4>
-									    </div>
-									    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-									         <div class="panel-body">
-									            <div class="row">
-										      		<div class="col-md-12">
-														<p>Curso <strong>Big Data</strong>, pela FIAP.</p>
-										      		</div>
-										      	</div>
-									         </div>
-									    </div>
-									</div>
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingTwo">
-									        <h4 class="panel-title">
-									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Sistema de Informação
-									            </a>
-									        </h4>
-									    </div>
-									    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-									        <div class="panel-body">
-									            <p>Curso <strong>Sistema de Informação</strong>, pela UMC.</p>
-									        </div>
-									    </div>
-									</div>
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingThree">
-									        <h4 class="panel-title">
-									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Python
-									            </a>
-									        </h4>
-									    </div>
-									    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-									        <div class="panel-body">
-									            <p>Curso <strong>Python</strong>, pela FIAP.</p>	
-									        </div>
-									    </div>
-									</div>
+                <!-- SEÇÃO: EXPERIÊNCIA -->
+                <section id="experiencia" class="pt-10 scroll-mt-20">
+                    <div class="flex items-center space-x-3 mb-8">
+                        <div class="h-10 w-2 bg-brand-500 rounded-full"></div>
+                        <h2 class="text-3xl font-extrabold tracking-tight text-slate-900">Experiência Profissional</h2>
+                    </div>
+                    
+                    <div class="space-y-8 relative before:absolute before:inset-y-0 before:left-4 before:w-0.5 before:bg-slate-200">
+                        
+                        <!-- IEPTB-BR -->
+                        <div class="relative pl-10 group">
+                            <span class="absolute left-2.5 top-1.5 w-3.5 h-3.5 bg-brand-500 rounded-full ring-4 ring-white group-hover:bg-sky-400 transition"></span>
+                            
+                            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-100 shadow-sm">
+                                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4 gap-2">
+                                    <div>
+                                        <h3 class="text-xl font-bold text-slate-950">Desenvolvedor Pleno/Sênior</h3>
+                                        <p class="text-brand-600 font-semibold text-sm">IEPTB-BR - Instituto de Estudo e Pesquisa de Títulos do Brasil</p>
+                                    </div>
+                                    <span class="inline-block bg-brand-50 text-brand-700 text-xs font-bold px-3 py-1 rounded-full border border-brand-100 whitespace-nowrap">
+                                        2017 - Atual
+                                    </span>
+                                </div>
+                                
+                                <ul class="space-y-2 text-slate-600 text-sm list-disc pl-4">
+                                    <li>Desenvolvimento de sistemas corporativos e APIs REST robustas utilizando Python e PHP (FastAPI, Flask, Django, Laravel).</li>
+                                    <li>Desenvolvimento de chatbot interno inteligente integrando técnicas de NLP (Processamento de Linguagem Natural) e Machine Learning.</li>
+                                    <li>Criação de automações complexas e escaláveis na nuvem AWS com Lambda, S3, ECR, EC2 e ferramentas de mensageria.</li>
+                                    <li>Integrações com serviços externos, gateways de pagamento e processamento assíncrono de arquivos críticos (PDF, ZIP, P7S com assinaturas).</li>
+                                    <li>Arquitetura e manutenção integral das esteiras de CI/CD com Jenkins, Docker e provisionamento de Infraestrutura como Código (IaC) via Terraform.</li>
+                                </ul>
+                            </div>
+                        </div>
 
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingFour">
-									        <h4 class="panel-title">
-									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">PHP e Mysql
-									            </a>
-									        </h4>
-									    </div>
-									    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-									        <div class="panel-body">
-									            <p>Curso <strong>PHP e Mysql</strong>, pela SoftBlue.</p>	
-									        </div>
-									    </div>
-									</div>
+                        <!-- TEx Tecnologia -->
+                        <div class="relative pl-10 group">
+                            <span class="absolute left-2.5 top-1.5 w-3.5 h-3.5 bg-brand-500 rounded-full ring-4 ring-white group-hover:bg-sky-400 transition"></span>
+                            
+                            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-100 shadow-sm">
+                                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4 gap-2">
+                                    <div>
+                                        <h3 class="text-xl font-bold text-slate-950">Programador Delphi / IntraWeb</h3>
+                                        <p class="text-brand-600 font-semibold text-sm">TEx Tecnologia</p>
+                                    </div>
+                                    <span class="inline-block bg-slate-100 text-slate-600 text-xs font-bold px-3 py-1 rounded-full border border-slate-200 whitespace-nowrap">
+                                        2013 - 2017
+                                    </span>
+                                </div>
+                                
+                                <ul class="space-y-2 text-slate-600 text-sm list-disc pl-4">
+                                    <li>Desenvolvimento e sustentação de aplicações web robustas utilizando Delphi IntraWeb.</li>
+                                    <li>Desenvolvimento de interfaces dinâmicas utilizando front-end tradicional (JavaScript, jQuery, CSS e Bootstrap).</li>
+                                    <li>Gerenciamento, otimização e manutenção de base de dados em MySQL.</li>
+                                    <li>Trabalho colaborativo diário utilizando metodologia ágil Scrum para entregas rápidas.</li>
+                                </ul>
+                            </div>
+                        </div>
 
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingFive">
-									        <h4 class="panel-title">
-									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Java
-									            </a>
-									        </h4>
-									    </div>
-									    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-									        <div class="panel-body">
-									            <p>Curso <strong>Java e Java Web</strong>, pela Impacta.</p>	
-									        </div>
-									    </div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+                    </div>
+                </section>
 
-			<section class="colorlib-experience" data-section="experience">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Trajetória</span>
-							<h2 class="colorlib-heading animate-box">Minha Trajetória</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-				         <div class="timeline-centered">
+                <!-- SEÇÃO: FORMAÇÃO & CURSOS -->
+                <section id="formacao" class="pt-10 scroll-mt-20">
+                    <div class="flex items-center space-x-3 mb-8">
+                        <div class="h-10 w-2 bg-brand-500 rounded-full"></div>
+                        <h2 class="text-3xl font-extrabold tracking-tight text-slate-900">Formação Acadêmica & Cursos</h2>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <!-- Acadêmico -->
+                        <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm md:col-span-1">
+                            <h3 class="text-lg font-bold text-brand-900 mb-4 flex items-center border-b pb-2">
+                                <i class="fa-solid fa-graduation-cap text-brand-500 mr-2"></i> Graduação
+                            </h3>
+                            <div class="space-y-1">
+                                <h4 class="font-bold text-slate-900 text-sm leading-tight">Análise e Desenvolvimento de Sistemas</h4>
+                                <p class="text-slate-500 text-xs">Universidade de Mogi das Cruzes (UMC)</p>
+                            </div>
+                        </div>
 
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
+                        <!-- Cursos Extracurriculares -->
+                        <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm md:col-span-2">
+                            <h3 class="text-lg font-bold text-brand-900 mb-4 flex items-center border-b pb-2">
+                                <i class="fa-solid fa-circle-check text-brand-500 mr-2"></i> Especializações & Cursos
+                            </h3>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-slate-700">
+                                <div class="flex items-start space-x-2">
+                                    <i class="fa-regular fa-square-check text-sky-500 mt-1"></i>
+                                    <span>CI/CD, Jenkins e Automação de Pipelines (Alura)</span>
+                                </div>
+                                <div class="flex items-start space-x-2">
+                                    <i class="fa-regular fa-square-check text-sky-500 mt-1"></i>
+                                    <span>Docker e DevOps (Alura)</span>
+                                </div>
+                                <div class="flex items-start space-x-2">
+                                    <i class="fa-regular fa-square-check text-sky-500 mt-1"></i>
+                                    <span>TypeScript e Node.js (Alura)</span>
+                                </div>
+                                <div class="flex items-start space-x-2">
+                                    <i class="fa-solid fa-earth-americas text-brand-500 mt-1"></i>
+                                    <span>Inglês Intermediário (em evolução constante)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-					               <div class="timeline-icon color-1">
-					                  <i class="icon-pen2"></i>
-					               </div>
+                <!-- SEÇÃO: CONTATO -->
+                <section id="contato" class="pt-10 pb-20 scroll-mt-20">
+                    <div class="flex items-center space-x-3 mb-8">
+                        <div class="h-10 w-2 bg-brand-500 rounded-full"></div>
+                        <h2 class="text-3xl font-extrabold tracking-tight text-slate-900">Vamos conversar?</h2>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-brand-900 to-slate-950 text-white rounded-2xl p-8 sm:p-10 shadow-lg relative overflow-hidden">
+                        <div class="absolute -right-16 -bottom-16 w-64 h-64 bg-brand-800 rounded-full opacity-20 blur-3xl"></div>
+                        
+                        <p class="text-sky-300 font-semibold mb-2">Contato Direto</p>
+                        <h3 class="text-xl sm:text-2xl font-bold mb-6 text-white">Entre em contato para novas oportunidades, projetos PJ, CLT ou parcerias</h3>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- Telefone -->
+                            <a href="tel:+5511994155677" class="flex items-center space-x-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition">
+                                <div class="w-10 h-10 rounded-lg bg-sky-500/20 flex items-center justify-center text-sky-400">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400">Celular / WhatsApp</p>
+                                    <p class="text-sm font-semibold text-white">+55 (11) 99415-5677</p>
+                                </div>
+                            </a>
 
-					               <div class="timeline-label">
-					                  <h2><a href="#">Full Stack Developer</a> <span>2017-2022</span></h2>
-					                  <p>Empresa: IEPTB - Instituto de Protesto e Títulos do Brasil.</p>
-					               </div>
-					            </div>
-					         </article>
+                            <!-- Email -->
+                            <a href="mailto:willmenezesnascimento@gmail.com" class="flex items-center space-x-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition">
+                                <div class="w-10 h-10 rounded-lg bg-sky-500/20 flex items-center justify-center text-sky-400">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="min-w-0">
+                                    <p class="text-xs text-slate-400">E-mail</p>
+                                    <p class="text-sm font-semibold text-white truncate">willmenezesnascimento@gmail.com</p>
+                                </div>
+                            </a>
 
-							 <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
+                            <!-- LinkedIn -->
+                            <a href="https://www.linkedin.com/in/william-menezes-nascimento-7b4856131" target="_blank" class="flex items-center space-x-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition">
+                                <div class="w-10 h-10 rounded-lg bg-sky-500/20 flex items-center justify-center text-sky-400">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400">LinkedIn</p>
+                                    <p class="text-sm font-semibold text-white">William Nascimento</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
 
-					               <div class="timeline-icon color-1">
-					                  <i class="icon-pen2"></i>
-					               </div>
+            </div>
+        </main>
+    </div>
 
-					               <div class="timeline-label">
-					                  <h2><a href="#">Full Stack Developer</a> <span>2020-2022</span></h2>
-					                  <p>Voluntário na AMFC - Associação Maria Flos Carmeli.</p>
-					               </div>
-					            </div>
-					         </article>
-
-
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-2">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">System Analyst Deplhi (Web)</a> <span>2013-2017</span></h2>
-					                  <p>Empresa: TEx Tecnologia.</p>
-					               </div>
-					            </div>
-					         </article>
-
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-3">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">System Analyst Web</a> <span>2010-2013</span></h2>
-					                  <p>Empresa: Portal Infinity.</p>
-					               </div>
-					            </div>
-					         </article>
-
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-4">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">Analyst Junior</a> <span>2009-2010</span></h2>
-					                  <p>Empresa: Telebank.</p>
-					               </div>
-					            </div>
-					         </article>
-					      </div>
-					   </div>
-				   </div>
-				</div>
-			</section>
-
-			<section class="colorlib-contact" data-section="contact">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Contato</span>
-							<h2 class="colorlib-heading">Meus contatos</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="icon-mail"></i>
-								</div>
-								<div class="colorlib-text">
-									<p><a href="mailto:willmenezesnascimento@gmail.com">willmenezesnascimento@gmail.com</a></p>
-								</div>
-							</div>
-
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="icon-social-linkedin-circular"></i>
-								</div>
-								<div class="colorlib-text">
-									<p><a href="https://www.linkedin.com/in/william-menezes-nascimento-7b4856131/" target="_blank">Meu linkedin</a> </p>
-								</div>
-							</div>
-
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="icon-map"></i>
-								</div>
-								<div class="colorlib-text">
-									<p>São Paulo - Brasil</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-		</div>
-	</div>
-	</div>
-
-
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.countTo.js"></script>
-	
-	<script src="js/main.js"></script>
-
-	</body>
+</body>
 </html>
-
