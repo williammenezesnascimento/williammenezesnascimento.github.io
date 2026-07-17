@@ -1,6 +1,6 @@
 # 💻 Meu Portfolio Pessoal
 
-Bem-vindo ao repositório do meu portfolio pessoal! Este projeto é uma página web desenvolvida para apresentar meu portifolio.
+Bem-vindo ao repositório do meu portfolio pessoal! Este projeto é uma página web desenvolvida para apresentar meu portfolio.
 
 A estrutura foi otimizada com foco em performance e organização, utilizando CSS estruturado, Font Awesome para ícones, scripts de interatividade e Tailwind CSS.
 
